@@ -1,11 +1,12 @@
 # DataProduct_project
 --- 
+
 ## Introduction
 
-This is the project from Coursera Course--Developing Data Products.
-A interactive web applications (apps) can bu built straight from R.
-A Shiny apps is built using **Shiny** package.
-I am sharing the server.R and ui.R code in this repo.
+This is the project from Coursera Course--Developing Data Products. 
+A interactive web applications (apps) can bu built straight from R. 
+A Shiny apps is built using **Shiny** package. 
+I am sharing the server.R and ui.R code in this repo. 
 
 The application is also deployed on ShinyApps.io at [https://zhoudidi2000.shinyapps.io/ShinyTry/](https://zhoudidi2000.shinyapps.io/ShinyTry/).
 
