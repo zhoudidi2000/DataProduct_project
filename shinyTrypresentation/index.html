@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Predict your kid's height</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Predict your kid's height">
+  <meta name="author" content="Di Zhou  Feb. 16, 2015">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Predict your kid's height</h1>
+    <h2></h2>
+    <p>Di Zhou  Feb. 16, 2015<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>In the Victorian era, Sir Francis Galton showed that &quot;when dealing with the transmission of stature from parents to children, the average height of the two parents, ...is all we need care to know about them&quot;(1886).</p>
+
+<p>The shinyTry app is an application where you can use to predict your kid&#39;s height according to your and your partner&#39;s height.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>How to use</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>There are 2 options you can use this app.</p>
+
+<ol>
+<li><p>If you know R:
+  Put server.R and ui.R files together in a folder(you can name the folder yourself, eg. shinyTry). Install <strong>Shiny</strong> package by <code>install.packages(&quot;shiny&quot;)</code>, and load it using <code>library(shiny)</code>. Run the application using <code>runApp(&lt;path/foldername&gt;)</code>. You will see the application in a browser. Follow the instructions to use the application. </p></li>
+<li><p>RStudio hosts service for Shiny apps. So you can use the app at: <a href="https://zhoudidi2000.shinyapps.io/ShinyTry/">https://zhoudidi2000.shinyapps.io/ShinyTry/</a>.</p></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>More information</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Height is a classical example of an inherited human trait. Research showed mid-parental prediction method explained 40% of the sex- and age-adjusted height variance. So this application only contributes 40% of the influence to children&#39;s height, other factors might be race, nutrition, activities, region and so on...</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Behind this App</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This prediction is based on the linear regression analysis method using the data from Galton in 1885. Generally, The midparent&#39;s height is an average of the fathers height and 1.08 times the mother&#39;s. We used the dataset to build an algorithm, and the user use the midparent&#39;s height to predict their children&#39;s height.</p>
+
+<pre><code>## (Intercept)      parent 
+##  23.9415302   0.6462906
+</code></pre>
+
+<p>So the model is: kid&#39;s height = 23.94+(Father&#39;s height+mother&#39;s heightX1.08)/2X0.646</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='How to use'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='More information'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Behind this App'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
